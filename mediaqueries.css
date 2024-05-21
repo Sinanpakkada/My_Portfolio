@@ -4,6 +4,7 @@
     margin-bottom: 6rem;
   }
   .about-containers {
+    display: flex; /* Use flexbox for layout */
     flex-wrap: wrap;
   }
   #contact,

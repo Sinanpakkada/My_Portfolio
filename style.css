@@ -219,6 +219,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  align-items: flex-end;
 }
 
 .btn {
@@ -271,6 +272,9 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  display: flex; /* or display: inline-block (from previous methods) */
+  flex-wrap: wrap; /* or not needed (from previous methods) */
+  overflow: auto;
 }
 
 .about-details-container {
@@ -301,6 +305,9 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  width: calc(33% - 20px); /* Define width for each project container */
+  margin-right: 20px;  /* Add spacing between containers */
+  overflow-x: auto;
 }
 
 .section-container {
