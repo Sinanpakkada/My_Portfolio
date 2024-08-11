@@ -419,8 +419,32 @@ article .icon {
   font-size: larger;
 }
 
+.badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  padding-left: 4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem; /* Adjust to match the desired visual space around the badge */
+  border-radius: 2rem; /* Matching the border-radius for a rounded look */
+  border: 0.1rem solid rgb(163, 163, 163);
+  background-color: #fff; /* Optional: Background color for visibility */
+  width: 220px;
+  height: 400px;
+}
+
+.badge-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem; }
+
 .contact-icon {
   cursor: default;
+  height: 2.5rem;
 }
 
 .email-icon {
