@@ -1,6 +1,10 @@
 @media screen and (max-width: 1400px) {
+  section {
+    padding: 4vh 1rem; /* Adjust padding for smaller screens */
+    min-height: fit-content;
+  }
   #profile {
-    height: 83vh;
+    height:96 vh;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -49,21 +53,30 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  section {
+    padding: 4vh 1rem; /* Adjust padding for smaller screens */
+    margin-bottom: 4rem; /* Reduce space between sections on smaller screens */
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+  #profile{
+    margin-bottom: 6rem; /* Adjust space between sections */
+    min-height: auto; /* Allow sections to adjust height based on content */
+  }
+  #about,
+  #experience,
+  #projects,
+  #contact {
+    margin-bottom: 2rem; /* Adjust space between sections */
+    min-height: auto; /* Allow sections to adjust height based on content */
+  }
+
+
+  nav {
+    display: none; /* Hide navigation on screens smaller than 768px */
   }
   article {
     font-size: 1rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
+  
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -100,5 +113,13 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .details-container {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .color-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
   }
 }
